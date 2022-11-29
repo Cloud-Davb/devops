@@ -1,9 +1,12 @@
 ---
 layout: post
-title: AWS query on Athena SNS SMS 
+title: AWS - query on Athena SNS SMS 
 ---
+# Explanation
 
-# create database
+This article is write to do some query on AWS athena to extract logs from S3 bucket (generate by SNS SMS).
+
+## Create database
 
 create database S3_database_SNS_SMS_logs
 
@@ -30,8 +33,7 @@ LOCATION 's3://buckets3logsns/SMSUsageReports/eu-west-3/2022/'
 TBLPROPERTIES ("skip.header.line.count"="1")
 
 
-
-# Query between two date
+## Query between two date
 
 SELECT from_iso8601_timestamp(publishtimeutc) as publishtimeutc,messageid,MessageType,DeliveryStatus,PriceInUSD,PartNumber,TotalParts
 FROM "s3_database_sns_sms_logs"."sns_sms_logs_table"
