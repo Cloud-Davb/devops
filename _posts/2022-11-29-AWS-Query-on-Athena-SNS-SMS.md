@@ -2,8 +2,6 @@
 layout: post
 title: AWS - query on Athena SNS SMS 
 ---
-# Explanation
-
 This article is write to do some query on AWS athena to extract logs from S3 bucket (generate by SNS SMS).
 
 ## Create database
