@@ -1,15 +1,15 @@
 {% if include.params.filter %}
   {% assign filter = include.params.filter %}
 {% endif %}
-
+<a>test1</a>
 {% assign split_mark = '<|>' %}
-
+<a>test2</a>
 {% assign dates = '' %}
 {% for post in site.posts %}
   {% assign name = post.date | date: filter %}
   {% assign dates = dates | append: split_mark  | append: name %}
 {% endfor %}
-
+<a>test3</a>
 {% assign return = dates
   | remove_first: split_mark
   | split: split_mark
