@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AWS - Queries on Athena from SNS service (SMS logs)
-subtitle: Author David BEAURY
 categories: AWS
 author: "David BEAURY"
 tags: [aws, SNS, logs] 
