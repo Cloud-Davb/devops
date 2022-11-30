@@ -138,8 +138,8 @@ header_pages:
 # Page default value
 #defaults:
 home:
-   heading: "Your awesome heading"
-   subheading: "Your awesome subheading"
+   heading: "DevOps SysOps Blog"
+   subheading: "AWS SQL Powershell update"
    banner: "Your image url"
 
 # Banner default settings
