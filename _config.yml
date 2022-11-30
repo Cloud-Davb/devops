@@ -138,7 +138,7 @@ header_pages:
 # Page default value
 #defaults:
 home:
-   heading: "DevOps SysOps Blog"
+   heading: "not use"
    subheading: "not use"
    banner: "Your image url"
 
