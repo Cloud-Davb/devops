@@ -1,7 +1,7 @@
 <header class="post-header">
   <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
   <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
-
+  <h1>Author David BEAURY</h1><a href="https://twitter.com/allwebcodesign"><img src="picts/social_twitter.png" alt="Twitter"></a>
   <p class="post-meta">
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
