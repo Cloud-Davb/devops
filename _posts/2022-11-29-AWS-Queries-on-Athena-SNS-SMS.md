@@ -19,16 +19,17 @@ Select the S3 bucket:
 
 ## Create database
 
-Comme back to
-
-<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image3.png">
+Comme back to Editor and past the query and click to run:
 
 ```sql
 create database S3_database_SNS_SMS_logs
 ```
+
+<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image3.png">
+
 ## Create table
 
-<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image4.png">
+Past the query and click to run:
 
 ```sql
 
@@ -52,10 +53,11 @@ STORED AS TEXTFILE
 LOCATION 's3://buckets3logsns/SMSUsageReports/eu-west-3/2022/'
 TBLPROPERTIES ("skip.header.line.count"="1")
 ```
+<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image4.png">
 
 ## Query between two date
 
-<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image5.png">
+Past the query (change the start date and the end date) and click to run:
 
 ```SQL
 
@@ -68,3 +70,4 @@ WHERE  parse_datetime(publishtimeutc,'yyyy-MM-dd''T''HH:mm:ss.SSSSSS''Z')
 ORDER by publishtimeutc  
 
 ````
+<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image5.png">
