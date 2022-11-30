@@ -28,7 +28,7 @@ create database S3_database_SNS_SMS_logs
 ```
 ## Create table
 
-<img src="../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image4.png">
+<img src="../../../../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image4.png">
 
 ```sql
 
@@ -55,7 +55,7 @@ TBLPROPERTIES ("skip.header.line.count"="1")
 
 ## Query between two date
 
-<img src="../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image1.png">
+<img src="../../../../../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image1.png">
 
 ```SQL
 
