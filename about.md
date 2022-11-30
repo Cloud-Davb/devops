@@ -17,6 +17,11 @@ Hot topics: #aws #cloud #devops #sysops #Powershell #linux #Cloudformation #Visu
 [david.beaury@gmail.com](mailto:david.beaury@gmail.com)
 
 
-<div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+
+
+
+
+
+
+
+This blog was generate with Jekyll static site generator and jekyll-theme-yat
