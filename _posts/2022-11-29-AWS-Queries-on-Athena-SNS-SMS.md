@@ -50,3 +50,5 @@ WHERE  parse_datetime(publishtimeutc,'yyyy-MM-dd''T''HH:mm:ss.SSSSSS''Z')
 ORDER by publishtimeutc  
 
 ````
+
+Writed by David BEAURY 
