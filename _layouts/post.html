@@ -9,7 +9,7 @@ sidebar:
 
 <div class="post">
   <section>
-    <a>test</a>
+
     {%- assign name = 'banner' -%}
     {%- include functions.html func='get_value' -%}
     {%- assign banner = return -%}
@@ -32,12 +32,14 @@ sidebar:
         <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
           page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
+      <a>test1</a>
       <span></span>
       {%- endif -%}
 
       {%- if page.next -%}
         <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
+      <a>test2</a>
       <span></span>
       {%- endif -%}
     </div>
@@ -47,6 +49,7 @@ sidebar:
     {%- if result.size == 0 -%}
     <div class="post-related">
       <div>Related Articles</div>
+      <a>test3</a>
       <ul>
         {% assign posts = site[page.collection] | sample:4 %}
         {%- for post in posts -%}
@@ -59,6 +62,7 @@ sidebar:
     {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
     <div class="post-comments">
+      <a>test4</a>
       {%- if page.comments != false -%}
 
       {%- if site.disqus.shortname -%}
