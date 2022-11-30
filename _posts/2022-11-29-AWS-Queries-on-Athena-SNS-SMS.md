@@ -15,13 +15,13 @@ Click on setting and manage:
 
 Select the S3 bucket:
 
-<img src="../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image2.png">
+<img src="../../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image2.png">
 
 ## Create database
 
 Comme back to
 
-<img src="../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image3.png">
+<img src="../../../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image3.png">
 
 ```sql
 create database S3_database_SNS_SMS_logs
