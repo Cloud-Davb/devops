@@ -139,7 +139,7 @@ header_pages:
 #defaults:
 home:
    heading: "DevOps SysOps Blog"
-   subheading: "AWS - CloudFormation - Appstream 2 - SQL - Powershell - update"
+   subheading: "AWS - CloudFormation - Appstream 2 - SQL - Powershell update"
    banner: "Your image url"
 
 # Banner default settings
