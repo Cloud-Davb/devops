@@ -15,13 +15,13 @@ Hot topics: #aws #cloud #devops #sysops #Powershell #linux #Cloudformation #Visu
 ### Contact me
 
 [david.beaury@gmail.com](mailto:david.beaury@gmail.com)
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 This blog was generate with Jekyll static site generator and jekyll-theme-yat
