@@ -55,7 +55,7 @@ TBLPROPERTIES ("skip.header.line.count"="1")
 
 ## Query between two date
 
-<img src="images\post\2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image5.png"></img>
+<img src="..\../images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image1.png"></img>
 
 ```SQL
 
