@@ -14,7 +14,7 @@ By analysing the logs I realised that I was sending several SMS for each sending
 
 I used the Athena service because the logs are generated in an S3 bucket with one file per day, so it is difficult to analyse. 
 
-# How to do it
+## How to do it
 
 ## Select the S3 bucket
 
