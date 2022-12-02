@@ -11,8 +11,6 @@ I have written this article to allow the end user to have administrator rights i
 
 ## How to do it
 
-Comme back to Editor and past the query and click to run:
-
 1.	Within the Image Builder Admin (or an account that has administrator rights on the Image Builder), launch the "Computer Management" MMC tool. (Easiest way is to click start, then type in "Computer", and Computer Management will show up)
 2.	From the left nav, expand "Local Users and Groups", then select "Groups"
 3.	Open the Administrators group
