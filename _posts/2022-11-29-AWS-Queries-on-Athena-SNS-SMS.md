@@ -34,7 +34,9 @@ create database S3_database_SNS_SMS_logs
 
 ## Create table
 
-Past the query and click to run:
+Select the database on the left menu and past the query and click to run.
+
+I put the date in string because the date format in the log file is not standard, so I prefer to transform it in the query.
 
 ```sql
 
