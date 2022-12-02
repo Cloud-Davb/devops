@@ -6,6 +6,7 @@ author: "David BEAURY"
 tags: [aws, SNS, logs] 
 ---
 ## Introduction
+<img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image6.png">
 I wrote this article in order to follow the details of sending SMS via the SNS service of AWS, which for me is not detailed enough in the interface, it allowed me to understand why I had reached limits too quickly (I saw the number of SMS sent but the cost did not correspond to the calculation I had made). 
 
 By analysing the logs I realised that I was sending several SMS for each sending.
