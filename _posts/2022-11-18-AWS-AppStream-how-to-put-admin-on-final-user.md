@@ -5,7 +5,7 @@ categories: AWS
 author: "David BEAURY"
 tags: [aws, AppStream 2.0, logs] 
 ---
-c
+## Introduction
 
 I have written this article to allow the end user to have administrator rights in the Appstream desktop on Windows 2019
 
