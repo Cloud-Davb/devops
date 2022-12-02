@@ -6,7 +6,7 @@ author: "David BEAURY"
 tags: [aws, SSM, UserData, EC2, Powershell] 
 ---
 ## Introduction
-I have written this article to be sure SSM service is completly install and running on Windows 2019 EC2 in user data.
+I have written this article to be sure SSM service is completly install and running on Windows 2019 EC2.
 In fact most of time when I want to use SSM the service not work and we can't connect on it. To solve it at the end of my user data script I force to install again SSM
 ---
 ## How to do it
