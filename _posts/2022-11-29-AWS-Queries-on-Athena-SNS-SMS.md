@@ -18,7 +18,7 @@ I used the Athena service because the logs are generated in an S3 bucket with on
 
 ## How to do it
 ---
-# Select the S3 bucket
+## Select the S3 bucket
 
 Click on setting and manage:
 
@@ -28,7 +28,7 @@ Select the S3 bucket:
 
 <img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image2.png">
 
-# Create database
+## Create database
 
 Comme back to Editor and past the query and click to run:
 
@@ -38,7 +38,7 @@ create database S3_database_SNS_SMS_logs
 
 <img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image3.png">
 
-# Create table
+## Create table
 
 Select the database on the left menu and past the query and click to run.
 
@@ -68,7 +68,7 @@ TBLPROPERTIES ("skip.header.line.count"="1")
 ```
 <img src="https://cloud-davb.github.io/devops/images/post/2022-11-29-AWS-Queries-on-Athena-SNS-SMS-image4.png">
 
-# Query between two date
+## Query between two date
 
 Past the query (change the start date and the end date) and click to run:
 
