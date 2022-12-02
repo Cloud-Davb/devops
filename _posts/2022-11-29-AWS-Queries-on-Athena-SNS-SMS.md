@@ -5,12 +5,14 @@ categories: AWS
 author: "David BEAURY"
 tags: [aws, SNS, logs] 
 ---
+## Introduction
 I wrote this article in order to follow the details of sending SMS via the SNS service of AWS, which for me is not detailed enough in the interface, it allowed me to understand why I had reached limits too quickly (I saw the number of SMS sent but the cost did not correspond to the calculation I had made). 
 
 By analysing the logs I realised that I was sending several SMS for each sending.
 
 I used the Athena service because the logs are generated in an S3 bucket with one file per day, so it is difficult to analyse. 
 
+### How to do it
 
 ## Select the S3 bucket
 
