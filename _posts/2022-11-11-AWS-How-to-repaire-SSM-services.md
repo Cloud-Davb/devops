@@ -12,7 +12,7 @@ In fact most of time when I want to use SSM the service not work and we can't co
 
 ## How to do it
 
-This script EC2Launch is to repaire or install again SSM services: add this line in your uer data (Powershell):
+This script EC2Launch is to repaire or install again SSM services: add this line in your user data (Powershell):
 
 ```POWERSHELL
     ....
