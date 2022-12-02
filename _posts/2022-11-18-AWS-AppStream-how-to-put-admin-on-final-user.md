@@ -3,7 +3,7 @@ layout: post
 title: AWS - AppStream 2.0 Allow end users to have admin rights to AppStream end users
 categories: AWS
 author: "David BEAURY"
-tags: [aws, AppStream 2.0, logs] 
+tags: [aws, AppStream 2.0, Admin] 
 ---
 ## Introduction
 
