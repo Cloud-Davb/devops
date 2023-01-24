@@ -10,6 +10,7 @@ tags: [aws, RDS, SQL, S3]
 
 <img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image1.png">
 
+
 I wrote this article in order to make an automatic backup of a SQL Express database under RDS: Indeed the backup of the database is made by snapshot and the recovery is very long, while a recovery by .bak file is fast. 
 
 
