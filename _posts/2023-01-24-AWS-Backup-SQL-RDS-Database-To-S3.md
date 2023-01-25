@@ -169,6 +169,9 @@ Stop-Transcript
 
 Add a new task
 Select Run Whether user is logged on or not
+
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image8.png">
+ 
  
 Configure the trigger on daily
 
