@@ -69,7 +69,7 @@ This powershell script backup the SQL database in RDS into S3 bucket.
 We have the function to wait the result of the backup "Wait-RdsNativeBackupSuccess": Success or Error. 
 Create this file.ps1 in a backup directory: in my sample it is in c:\SQL\backupSQLtoS3.ps1
 
-Configure the parameters in this file:
+Configure parameters in this file:
 
 $server = 'db-xxxxx-prod.xxxxxx.eu-west-3.rds.amazxxxxxs.com'
 $bucketS3 ='arn:aws:s3:::cliexxxxxxx/rd/'
@@ -165,6 +165,20 @@ Stop-Transcript
 
 
 
-## Create cheduler
+## Create scheduler on the EC2
+
+Add a new task
+Select Run Whether user is logged on or not
+ 
+Configure the trigger on daily
+
+ 
+
+Add the action:
+Program put Powershell and in add arguments with your position file -File c:\SQL\files.ps1
+ 
+
+
+
 
 
