@@ -23,7 +23,7 @@ Go to OptionGroup on RDS database and add a new one
 Select SQLSERVER_BACKUP_RESTORE
 Create a new Role to allow backup
 Select on witch bucket you want to backup
-s
+
 <img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image3.png">
 
 This is the result
