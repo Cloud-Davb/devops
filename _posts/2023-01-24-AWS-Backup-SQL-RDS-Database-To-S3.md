@@ -26,6 +26,11 @@ Select on witch bucket you want to backup
 s
 <img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image3.png">
 
+This is the result
+
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image4.png">
+
+Modify your database and select the parameter group and option group (just created before)
 
 
 ## Create a powershell script file
