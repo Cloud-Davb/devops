@@ -32,8 +32,35 @@ This is the result
 
 Modify your database and select the parameter group and option group (just created before)
 
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image5.png">
 
+Click to continue.
 
+## Test the backup in SQL manager
+
+Start on your EC2 the SQL Manager
+
+Connect on your database.
+
+And test the backup 
+```SQL
+exec msdb.dbo.rds_backup_database 
+@source_db_name='database_name', 
+@s3_arn_to_backup_to='arn:aws:s3:::bucket_name/file_name_and_extension',
+@overwrite_S3_backup_file=1;
+
+```
+
+Replace the database name, bucker name and extraction:
+
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image6.png">
+
+```SQL
+exec msdb.dbo.rds_task_status @db_name='database_name'
+```
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image7.png">
+After that verify the result: you need to have success 
+You need to verify if your backup succeded 
 
 ## Create a powershell script file
 
