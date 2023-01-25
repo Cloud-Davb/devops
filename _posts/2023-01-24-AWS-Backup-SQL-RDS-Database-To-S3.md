@@ -59,6 +59,7 @@ Replace the database name, bucker name and extraction:
 exec msdb.dbo.rds_task_status @db_name='database_name'
 ```
 <img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image7.png">
+
 After that verify the result: you need to have success 
 You need to verify if your backup succeded 
 
