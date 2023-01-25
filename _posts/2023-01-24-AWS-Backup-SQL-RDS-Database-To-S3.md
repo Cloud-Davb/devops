@@ -12,9 +12,21 @@ tags: [aws, RDS, SQL, S3]
 
 I wrote this article in order to make an automatic backup of a SQL Express database under RDS: Indeed the backup of the database is made by snapshot and the recovery is very long, while a recovery by .bak file is fast. 
 
-
 ## How to do it
 ---
+## Create option group for the RDS backup to allow backup
+
+Go to OptionGroup on RDS database and add a new one
+
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image2.png">
+
+Select SQLSERVER_BACKUP_RESTORE
+Create a new Role to allow backup
+Select on witch bucket you want to backup
+s
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image3.png">
+
+
 
 ## Create a powershell script file
 
