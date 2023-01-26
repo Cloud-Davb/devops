@@ -8,7 +8,7 @@ tags: [aws, RDS, SQL, S3]
 ## Introduction
 ---
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image1.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image1.png">
 
 
 I wrote this article in order to make an automatic backup of a SQL Express database under RDS: Indeed the backup of the database is made by snapshot and the recovery is very long, while a recovery by .bak file is fast. 
@@ -19,21 +19,21 @@ I wrote this article in order to make an automatic backup of a SQL Express datab
 
 Go to OptionGroup on RDS database and add a new one
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image2.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image2.png">
 
 Select SQLSERVER_BACKUP_RESTORE
 Create a new Role to allow backup
 Select on witch bucket you want to backup
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image3.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image3.png">
 
 This is the result
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image4.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image4.png">
 
 Modify your database and select the parameter group and option group (just created before)
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image5.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image5.png">
 
 Click to continue.
 
@@ -54,12 +54,12 @@ exec msdb.dbo.rds_backup_database
 
 Replace the database name, bucker name and extraction:
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image6.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image6.png">
 
 ```SQL
 exec msdb.dbo.rds_task_status @db_name='database_name'
 ```
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image7.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image7.png">
 
 After that verify the result: you need to have success 
 You need to verify if your backup succeded 
@@ -171,14 +171,14 @@ Stop-Transcript
 Add a new task
 Select Run Whether user is logged on or not
 
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image8.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image8.png">
  
  
 Configure the trigger on daily
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image9.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image9.png">
  
 
 Add the action:
 Program put Powershell and in add arguments with your position file -File c:\SQL\files.ps1
  
-<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image10.png">
+<img src="https://cloud-davb.github.io/devops/images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image10.png">
