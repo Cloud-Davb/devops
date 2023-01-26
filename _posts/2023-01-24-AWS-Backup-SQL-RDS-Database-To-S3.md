@@ -175,13 +175,13 @@ Select Run Whether user is logged on or not
  
  
 Configure the trigger on daily
-
+<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image9.png">
  
 
 Add the action:
 Program put Powershell and in add arguments with your position file -File c:\SQL\files.ps1
  
-
+<img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image10.png">
 
 
 
