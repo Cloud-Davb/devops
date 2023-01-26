@@ -182,7 +182,3 @@ Add the action:
 Program put Powershell and in add arguments with your position file -File c:\SQL\files.ps1
  
 <img src="../images/post/2023-01-24-AWS-Backup-SQL-RDS-Database-To-S3-image10.png">
-
-
-
-
